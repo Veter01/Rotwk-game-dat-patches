@@ -19,6 +19,8 @@ The table identifies the corresponding changed byte ranges. The builder supplies
 | `0x0052CA55` | `0x0092CA55` | `8b 7d f0 c6 45 fc 00` | `e9 78 e1 60 00 90 90` |
 | `0x0052CDB1` | `0x0092CDB1` | `8b 49 08 e8 0b fb ff ff` | `eb 06 90 90 90 90 90 90` |
 
+The reference Mouse and Keyboard screen displays `Z` for Select All Heroes and `O` for Planning Mode. For the full list of bindings, see the [reference menu table](configurable-base-hotkeys.md#default-bindings-shown-in-the-reference-menu).
+
 Use the matching Options interface and language strings from the target mod. The original in-game button for selecting heroes is a separate entry point.
 
 ## Verify in ROTWK

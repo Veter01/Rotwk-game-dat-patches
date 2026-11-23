@@ -15,7 +15,7 @@ Compared `options.big` from the original and modified inputs. Both movies have 3
 
 `ETSelectPage` switches which content clip is visible, updates the selected item in `Navigation`, and sends the matching page callback through `GameCode`. `ETSyncSoundTips` updates the sound-page help. The `NativeGadgets` sprite contains the controls that expose options to the engine.
 
-New controls include `Options::ETFrameRate`, `Options::ETMouseSensitivity`, and `Options::ETDelayFix`. The added `Options::ETKey...` controls cover camera movement and reset, zoom, selecting builders, Stop, Attack Move, Build Path, the spellbook, Sell, Select All, Select All Heroes, and Tactical Menu. The root action code also sends `ETBegin`, `ETCancel`, and `ETReset` for settings state. The [matching engine patches](../interface/configurable-base-hotkeys.md) handle the values and actual game commands.
+New controls include `Options::ETFrameRate`, `Options::ETMouseSensitivity`, and `Options::ETDelayFix`. The 14 added `Options::ETKey...` controls are listed by action and default key in the [reference menu table](../interface/configurable-base-hotkeys.md#default-bindings-shown-in-the-reference-menu). `Options::ETKeyBuildPath` is the control shown as Select Matching Units and `Options::ETKeyTacticalMenu` is shown as Planning Mode in that menu. The root action code also sends `ETBegin`, `ETCancel`, and `ETReset` for settings state. The [matching engine patches](../interface/configurable-base-hotkeys.md) handle the values and actual game commands.
 
 ## Edit
 
