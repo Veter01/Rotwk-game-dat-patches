@@ -52,6 +52,10 @@ The builder checks the baseline hash, checks each old byte range and retains the
 - [Add missing entries to the resolution settings](interface/resolution-options-list.md)
 - [Offer 30 FPS and 60 FPS in Options](interface/frame-rate-options.md)
 
+### Editable APT menus
+
+- [Edit and rebuild the lobby, options, and player-list movies](apt/README.md)
+
 ### Mod development
 
 - [Add filtering to horde member respawn](modding/filtered-horde-respawn.md)
