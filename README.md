@@ -2,6 +2,8 @@
 
 These guides document the differences between two Windows x86 builds of *The Rise of the Witch-king*. Each feature has its own guide with engine addresses, installation steps and a test to run in the game.
 
+Browse the [feature index](#feature-index) to find the guides by topic.
+
 | Input | Embedded engine build | SHA-256 |
 |---|---|---|
 | `Original.zip` → `game.dat` | `2.1.2614.37001` | `b70c58fd522efc81c3e25fed406f8b6d1c7a4158688e6fa501115b4236d81ed0` |
@@ -28,38 +30,59 @@ The builder checks the baseline hash, checks each old byte range and retains the
 
 ## Feature index
 
-- [Restore the builder selection click](01-builder-selection-click-sound.md)
-- [Cycle through all hired builders](02-cycle-through-all-builders.md)
-- [Add Planning Mode and Select All Heroes hotkeys](03-planning-mode-and-select-all-heroes.md)
-- [Keep the camera in place for on-screen builders](04-builder-camera-visibility.md)
-- [Add a Select All Units on Map hotkey](05-select-all-units-on-map-hotkey.md)
-- [Keep resource workers out of the builder hotkey](06-builder-worker-hotkey-filter.md)
-- [Add filtering to horde member respawn](07-filtered-horde-respawn.md)
-- [Change a portrait and button image without transforming the unit](08-portrait-and-button-image-upgrade.md)
-- [Block spellbook power-point earnings on selected units](09-cant-earn-powerpoints.md)
-- [Allow mounted special abilities at zero locomotor speed](10-mounted-special-ability-at-zero-speed.md)
-- [Extend lobby faction IDs to 127](11-faction-limit-127.md)
-- [Support the common unload command for Battlewagons and the Witch-king](12-general-unload-for-battlewagons-and-witch-king.md)
-- [Keep units moving when switching to Defensive Stance](13-defensive-stance-keeps-units-moving.md)
-- [Add map search to the lobby](14-lobby-map-search.md)
-- [Add and repair the basic configurable hotkeys](15-configurable-base-hotkeys.md)
-- [Expose the network delay fix in Options](16-network-delay-toggle.md)
-- [Restore camera reset on a middle mouse click](17-middle-mouse-camera-reset.md)
-- [Open Heroes and Upgrades tabs in replays](18-replay-heroes-and-upgrades-tabs.md)
-- [Show recorded match chat in replays](19-record-match-chat-in-replays.md)
-- [Pause and resume replays with Ctrl + ]](20-replay-pause-hotkey.md)
-- [Mute a player's messages from the multiplayer player list](21-mute-player-messages.md)
-- [Select and group buildings](22-select-buildings.md)
-- [Expand engine display-mode support](23-display-mode-support.md)
-- [Add missing entries to the resolution settings](24-resolution-options-list.md)
-- [Offer 30 FPS and 60 FPS in Options](25-30-and-60-fps-settings.md)
-- [Enforce the construction limit](26-enforce-building-limit.md)
-- [Extend War of the Ring from six to eight players](27-wotr-eight-player-support.md)
-- [Allow War of the Ring multiplayer with more than two participants](28-wotr-multiplayer-beyond-two-players.md)
-- [Allow War of the Ring territory transfers from a non-host player](29-wotr-territory-transfers-without-host.md)
-- [Raise the upgrade ID limit from 1,152 to 5,120](30-upgrade-limit-5120.md)
-- [Add upgrade triggers to PillageModule](31-pillage-upgrade-trigger.md)
-- [Apply RATE_OF_FIRE to ranged and melee weapon timing](32-rate-of-fire-for-ranged-and-melee.md)
+### Replays
+
+- [Open Heroes and Upgrades tabs in replays](replays/replay-heroes-and-upgrades-tabs.md)
+- [Show recorded match chat in replays](replays/record-match-chat-in-replays.md)
+- [Pause and resume replays with Ctrl + \]](replays/replay-pause-hotkey.md)
+
+### Interface, hotkeys, and display
+
+- [Restore the builder selection click](interface/builder-selection-click-sound.md)
+- [Cycle through all hired builders](interface/cycle-through-all-builders.md)
+- [Add Planning Mode and Select All Heroes hotkeys](interface/planning-mode-and-select-all-heroes.md)
+- [Keep the camera in place for on-screen builders](interface/builder-camera-visibility.md)
+- [Add a Select All Units on Map hotkey](interface/select-all-units-on-map-hotkey.md)
+- [Keep resource workers out of the builder hotkey](interface/builder-worker-hotkey-filter.md)
+- [Add map search to the lobby](interface/lobby-map-search.md)
+- [Add and repair the basic configurable hotkeys](interface/configurable-base-hotkeys.md)
+- [Restore camera reset on a middle mouse click](interface/middle-mouse-camera-reset.md)
+- [Select and group buildings](interface/select-buildings.md)
+- [Expand engine display-mode support](interface/display-mode-support.md)
+- [Add missing entries to the resolution settings](interface/resolution-options-list.md)
+- [Offer 30 FPS and 60 FPS in Options](interface/frame-rate-options.md)
+
+### Mod development
+
+- [Add filtering to horde member respawn](modding/filtered-horde-respawn.md)
+- [Change a portrait and button image without transforming the unit](modding/portrait-and-button-image-upgrade.md)
+- [Block spellbook power-point earnings on selected units](modding/cant-earn-powerpoints.md)
+- [Allow mounted special abilities at zero locomotor speed](modding/mounted-special-ability-at-zero-speed.md)
+- [Extend lobby faction IDs to 127](modding/faction-limit.md)
+- [Raise the upgrade ID limit from 1,152 to 5,120](modding/upgrade-limit.md)
+- [Add upgrade triggers to PillageModule](modding/pillage-upgrade-trigger.md)
+- [Apply RATE_OF_FIRE to ranged and melee weapon timing](modding/rate-of-fire-for-ranged-and-melee.md)
+
+### WorldBuilder
+
+- [WorldBuilder documentation](worldbuilder/README.md)
+
+### War of the Ring
+
+- [Extend War of the Ring from six to eight players](war-of-the-ring/wotr-eight-player-support.md)
+- [Allow War of the Ring multiplayer with more than two participants](war-of-the-ring/wotr-multiplayer-beyond-two-players.md)
+- [Allow War of the Ring territory transfers from a non-host player](war-of-the-ring/wotr-territory-transfers-without-host.md)
+
+### Multiplayer
+
+- [Expose the network delay fix in Options](multiplayer/network-delay-toggle.md)
+- [Mute a player's messages from the multiplayer player list](multiplayer/mute-player-messages.md)
+
+### Gameplay
+
+- [Support the common unload command for Battlewagons](gameplay/general-unload-for-battlewagons.md)
+- [Keep units moving when switching to Defensive Stance](gameplay/defensive-stance-keeps-units-moving.md)
+- [Enforce the construction limit](gameplay/enforce-building-limit.md)
 
 ## Patch builder
 
