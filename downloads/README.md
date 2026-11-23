@@ -19,61 +19,61 @@ Add these entries to the `lotr.str` loaded by your mod for the selected language
 
 ```text
 APT:ETKeySelectAllHeroes
-    "Выбрать всех героев"
+    "Select All Heroes"
 END
 ```
 
-| Key in `lotr.str` | Russian menu text |
+| Key in `lotr.str` | English menu text |
 |---|---|
-| `APT:ETModName` | Ennorath |
-| `APT:ETGraphics` | Графика |
-| `APT:ETScreen` | Экран |
-| `APT:ETSound` | Звук |
-| `APT:ETHotkeys` | Горячие клавиши |
-| `APT:ETNetwork` | Сетевая игра |
-| `APT:ETDetail` | Качество изображения |
-| `APT:ETBrightness` | Яркость |
-| `APT:ETHealth` | Индикаторы здоровья |
-| `APT:ETResolution` | Разрешение экрана |
-| `APT:ETFPS` | Частота кадров (FPS) |
+| `APT:ETModName` | Your Mod Name |
+| `APT:ETGraphics` | Graphics |
+| `APT:ETScreen` | Screen |
+| `APT:ETSound` | Sound |
+| `APT:ETHotkeys` | Hotkeys |
+| `APT:ETNetwork` | Multiplayer |
+| `APT:ETDetail` | Graphics Quality |
+| `APT:ETBrightness` | Brightness |
+| `APT:ETHealth` | Health Bars |
+| `APT:ETResolution` | Screen Resolution |
+| `APT:ETFPS` | Frame Rate (FPS) |
 | `APT:ETFPS30` | 30 FPS |
 | `APT:ETFPS60` | 60 FPS |
-| `APT:ETFPSNote` | Частота кадров изменяется в главном меню. |
-| `APT:ETSensitivity` | Чувствительность мыши |
-| `APT:ETScroll` | Скорость прокрутки карты |
+| `APT:ETFPSNote` | Frame rate can be changed in the main menu. |
+| `APT:ETSensitivity` | Mouse Sensitivity |
+| `APT:ETScroll` | Map Scroll Speed |
 | `APT:ETKeysNote` | `""` |
-| `APT:ETKeyCamLeft` | Повернуть камеру влево |
-| `APT:ETKeyCamRight` | Повернуть камеру вправо |
-| `APT:ETKeyZoomIn` | Приблизить камеру |
-| `APT:ETKeyZoomOut` | Отдалить камеру |
-| `APT:ETKeyCameraReset` | Вернуть камеру |
-| `APT:ETKeyBuilder` | Выбрать следующего строителя |
-| `APT:ETKeyStop` | Остановить выбранных |
-| `APT:ETKeyAttackMove` | Атака с перемещением |
-| `APT:ETKeyMatchType` | Выбрать тот же тип |
-| `APT:ETKeyBuildPath` | Выбрать тот же тип |
-| `APT:ETKeySpellbook` | Открыть книгу заклинаний |
-| `APT:ETKeySell` | Продать выбранное здание |
-| `APT:ETKeySelectAll` | Выбор всех юнитов на карте |
-| `APT:ETKeySelectAllHeroes` | Выбрать всех героев |
-| `APT:ETKeyTacticalMenu` | Открыть режим планирования |
-| `APT:ETKeyDefault` | По умолчанию |
-| `APT:ETKeyDefaultSuffix` | по умолчанию |
-| `APT:ETKeyMiddleButton` | СКМ |
-| `APT:ETMusic` | Музыка |
-| `APT:ETEffects` | Эффекты |
-| `APT:ETVoice` | Речь |
-| `APT:ETAmbient` | Фоновые звуки |
-| `APT:ETMovies` | Ролики |
+| `APT:ETKeyCamLeft` | Rotate Camera Left |
+| `APT:ETKeyCamRight` | Rotate Camera Right |
+| `APT:ETKeyZoomIn` | Zoom In |
+| `APT:ETKeyZoomOut` | Zoom Out |
+| `APT:ETKeyCameraReset` | Reset Camera |
+| `APT:ETKeyBuilder` | Select Next Builder |
+| `APT:ETKeyStop` | Stop Selected Units |
+| `APT:ETKeyAttackMove` | Attack Move |
+| `APT:ETKeyMatchType` | Select Same Type |
+| `APT:ETKeyBuildPath` | Select Same Type |
+| `APT:ETKeySpellbook` | Open Spellbook |
+| `APT:ETKeySell` | Sell Selected Building |
+| `APT:ETKeySelectAll` | Select All Units on the Map |
+| `APT:ETKeySelectAllHeroes` | Select All Heroes |
+| `APT:ETKeyTacticalMenu` | Open Planning Mode |
+| `APT:ETKeyDefault` | Default |
+| `APT:ETKeyDefaultSuffix` | default |
+| `APT:ETKeyMiddleButton` | Middle Mouse Button |
+| `APT:ETMusic` | Music |
+| `APT:ETEffects` | Sound Effects |
+| `APT:ETVoice` | Voice |
+| `APT:ETAmbient` | Ambient Sound |
+| `APT:ETMovies` | Movies |
 | `APT:ETEAX` | EAX3 |
-| `APT:ETHighAudio` | Высокое качество звука |
-| `APT:ETIP` | IP-адрес |
-| `APT:ETDelay` | Задержка отправки |
-| `APT:ETDelayFix` | Исправление сетевой задержки |
-| `APT:ETPort` | Номер порта |
-| `APT:ETPortHelp` | От 8008 до 65535 |
-| `APT:MapSearch` | Поиск карты |
+| `APT:ETHighAudio` | High-Quality Audio |
+| `APT:ETIP` | IP Address |
+| `APT:ETDelay` | Send Delay |
+| `APT:ETDelayFix` | Network Delay Fix |
+| `APT:ETPort` | Port Number |
+| `APT:ETPortHelp` | 8008 to 65535 |
+| `APT:MapSearch` | Search Maps |
 
-`APT:ETKeysNote` is the optional note under the hotkey controls. Use an empty quoted value to leave it blank. Keep both `APT:ETKeyMatchType` and `APT:ETKeyBuildPath` because the patched engine and APT movie reference different names for that label. You can set `APT:ETModName` to your mod's name.
+`APT:ETKeysNote` is the optional note under the hotkey controls. Use an empty quoted value to leave it blank. Keep both `APT:ETKeyMatchType` and `APT:ETKeyBuildPath` because the patched engine and APT movie reference different names for that label. Replace `Your Mod Name` with the name of your mod.
 
 For the editable interface sources and build instructions, see the [APT guide](../apt/README.md).
