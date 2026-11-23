@@ -4,6 +4,15 @@ These guides document the differences between two Windows x86 builds of *The Ris
 
 Browse the [feature index](#feature-index) to find the guides by topic. For prebuilt files, see [Downloads](downloads/README.md).
 
+## Credits
+
+The following changes were adapted from the Edain team's work in [pySAGE](https://github.com/ClementJ18/pySAGE).
+
+- Expanded `CommandSet` capacity from 33 to 64 entries.
+- Added support for 60 FPS rendering.
+- Added chat shortcuts to copy (`Ctrl+C`), paste (`Ctrl+V`), cut (`Ctrl+X`), and select all text (`Ctrl+A`).
+- Raised the faction limit from 14 to 127.
+
 | Input | Embedded engine build | SHA-256 |
 |---|---|---|
 | `Original.zip` → `game.dat` | `2.1.2614.37001` | `b70c58fd522efc81c3e25fed406f8b6d1c7a4158688e6fa501115b4236d81ed0` |
