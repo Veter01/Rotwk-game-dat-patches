@@ -8,7 +8,7 @@ Run the [patch builder](../README.md#build-a-patched-game-file) with `input`.
 
 ## Implementation
 
-The `.optui` hooks integrate settings load, lookup and save. `.wmkeys` contains the option records and `.keycmd`, `.keydef` and `.hotkeys` handle matching, defaults and runtime routing. The table includes camera turn, zoom, camera reset, builder selection, Stop, Attack Move, the build-path or select-matching action, spellbook, Sell, map-wide selection and hero selection. The menu and runtime input handlers are a shared bundle with the other controls and settings in these guides.
+The `.optui` hooks integrate settings load, lookup and save. `.wmkeys` contains the option records and `.keycmd`, `.keydef` and `.hotkeys` handle matching, defaults and runtime routing. The reference bindings and their APT control names are listed below. The menu and runtime input handlers are a shared bundle with the other controls and settings in these guides.
 
 The table identifies the corresponding changed byte ranges. The builder supplies any shared code and data sections.
 
@@ -26,6 +26,29 @@ The table identifies the corresponding changed byte ranges. The builder supplies
 | `0x0059106B` | `0x0099106B` | `8b 01 ff 50 7c 85 c0 74 2a` | `e9 10 85 5a 00 90 90 90 90` |
 
 The menu references `APT:ETHotkeys`, `APT:ETKeyDefault` and `APT:ETKeyDefaultSuffix`. Keep the associated strings and the target UI's hotkey rows together when porting.
+
+## Default bindings shown in the reference menu
+
+These are the 14 bindings displayed in the reference Mouse and Keyboard screen. The first four rows display the same middle mouse button label. The game interprets the camera gesture for each action. Other builds and saved user settings can show different bindings.
+
+| Action | Displayed default | APT control |
+|---|---|---|
+| Rotate camera left | Middle mouse button | `Options::ETKeyCamLeft` |
+| Rotate camera right | Middle mouse button | `Options::ETKeyCamRight` |
+| Zoom in | Middle mouse button | `Options::ETKeyZoomIn` |
+| Zoom out | Middle mouse button | `Options::ETKeyZoomOut` |
+| Reset camera | `Num 5` | `Options::ETKeyCameraReset` |
+| Select next builder | `B` | `Options::ETKeyBuilder` |
+| Stop selected units | `S` | `Options::ETKeyStop` |
+| Attack Move | `A` | `Options::ETKeyAttackMove` |
+| Select matching units | `E` | `Options::ETKeyBuildPath` |
+| Open the spellbook | Grave accent (backtick) | `Options::ETKeySpellbook` |
+| Sell selected building | `Delete` | `Options::ETKeySell` |
+| Select all units on the map | `Q` | `Options::ETKeySelectAll` |
+| Select all heroes | `Z` | `Options::ETKeySelectAllHeroes` |
+| Open Planning Mode | `O` | `Options::ETKeyTacticalMenu` |
+
+Mouse Sensitivity and Map Scroll Speed are separate controls on the same page.
 
 ## Verify in ROTWK
 
