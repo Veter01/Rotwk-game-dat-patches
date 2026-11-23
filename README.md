@@ -6,6 +6,8 @@ Browse the [feature index](#feature-index) to find the guides by topic. For preb
 
 ## Credits
 
+I'm very grateful to the Edain team for their work, and I'd be glad to see others help them improve ROTWK.
+
 The following changes were adapted from the Edain team's work in [pySAGE](https://github.com/ClementJ18/pySAGE).
 
 - Expanded `CommandSet` capacity from 33 to 64 entries.
