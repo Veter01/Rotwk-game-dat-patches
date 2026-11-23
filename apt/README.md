@@ -8,6 +8,8 @@ The three modified menus are available as editable XML. Each source folder also 
 | `options.big` | [Options.xml](source/options/Options.xml) | [Settings pages and hotkeys](options-menu.md) |
 | `playertribute.big` | [PlayerTribute.xml](source/playertribute/PlayerTribute.xml) | [Per-player chat mute](player-tribute.md) |
 
+The compiled menus are available in [Downloads](../downloads/README.md).
+
 ## Edit and rebuild
 
 1. Clone this repository. Extract `mpgamesetup.big`, `options.big`, and `playertribute.big` from your original archive into a local directory such as `Orig`.
