@@ -15,6 +15,7 @@ The following changes were adapted from the Edain team's work in [pySAGE](https:
 - Added chat shortcuts to copy (`Ctrl+C`), paste (`Ctrl+V`), cut (`Ctrl+X`), and select all text (`Ctrl+A`).
 - Raised the faction limit from 14 to 127.
 - Enabled opening fortress tabs in replays.
+- Fixed a bug that caused the command point cap to disappear during long matches.
 
 | Input | Embedded engine build | SHA-256 |
 |---|---|---|
