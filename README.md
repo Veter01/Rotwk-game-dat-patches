@@ -14,6 +14,7 @@ The following changes were adapted from the Edain team's work in [pySAGE](https:
 - Added support for 60 FPS rendering.
 - Added chat shortcuts to copy (`Ctrl+C`), paste (`Ctrl+V`), cut (`Ctrl+X`), and select all text (`Ctrl+A`).
 - Raised the faction limit from 14 to 127.
+- Enabled opening fortress tabs in replays.
 
 | Input | Embedded engine build | SHA-256 |
 |---|---|---|
