@@ -65,6 +65,7 @@ The builder checks the baseline hash, checks each old byte range and retains the
 - [Add missing entries to the resolution settings](interface/resolution-options-list.md)
 - [Offer 30 FPS and 60 FPS in Options](interface/frame-rate-options.md)
 - [Set Planning Mode to Z and fix the Select All Heroes sound](interface/hotkey-defaults-and-hero-selection-sound.md)
+- [Show allied players in one color on the minimap](interface/allied-minimap-colors.md)
 
 ### Editable APT menus
 
