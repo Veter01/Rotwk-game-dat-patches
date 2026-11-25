@@ -64,10 +64,12 @@ The builder checks the baseline hash, checks each old byte range and retains the
 - [Expand engine display-mode support](interface/display-mode-support.md)
 - [Add missing entries to the resolution settings](interface/resolution-options-list.md)
 - [Offer 30 FPS and 60 FPS in Options](interface/frame-rate-options.md)
+- [Set Planning Mode to Z and fix the Select All Heroes sound](interface/hotkey-defaults-and-hero-selection-sound.md)
 
 ### Editable APT menus
 
 - [Edit and rebuild the lobby, options, and player-list movies](apt/README.md)
+- [Add and localize the Block column in the player list](apt/player-tribute-block-column.md)
 
 ### Mod development
 
@@ -100,6 +102,7 @@ The builder checks the baseline hash, checks each old byte range and retains the
 - [Support the common unload command for Battlewagons](gameplay/general-unload-for-battlewagons.md)
 - [Keep units moving when switching to Defensive Stance](gameplay/defensive-stance-keeps-units-moving.md)
 - [Enforce the construction limit](gameplay/enforce-building-limit.md)
+- [Restore pikeman retaliation when cavalry tramples them](gameplay/pike-trample-retaliation.md)
 
 ## Patch builder
 
