@@ -16,6 +16,8 @@ END
 | `APT:ETSound` | Sound |
 | `APT:ETHotkeys` | Hotkeys |
 | `APT:ETNetwork` | Multiplayer |
+| `APT:ETOther` | Other |
+| `APT:ETMinimapAllyColor` | Show ally and enemy colors as a single color on the minimap. |
 | `APT:ETDetail` | Graphics Quality |
 | `APT:ETBrightness` | Brightness |
 | `APT:ETHealth` | Health Bars |
