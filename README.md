@@ -43,6 +43,8 @@ The builder checks the baseline hash, checks each old byte range and retains the
 
 ## Feature index
 
+For guides with their own build commands, use the input files and SHA-256 checksums specified in each guide.
+
 ### Replays
 
 - [Open Heroes and Upgrades tabs in replays](replays/replay-heroes-and-upgrades-tabs.md)
@@ -66,6 +68,8 @@ The builder checks the baseline hash, checks each old byte range and retains the
 - [Offer 30 FPS and 60 FPS in Options](interface/frame-rate-options.md)
 - [Set Planning Mode to Z and fix the Select All Heroes sound](interface/hotkey-defaults-and-hero-selection-sound.md)
 - [Show allied players in one color on the minimap](interface/allied-minimap-colors.md)
+- [Switch display modes live and toggle cursor clipping](interface/display-mode-and-cursor-clipping.md)
+- [Skip unfinished buildings when selecting matching buildings](interface/finished-building-selection.md)
 
 ### Editable APT menus
 
@@ -82,6 +86,17 @@ The builder checks the baseline hash, checks each old byte range and retains the
 - [Raise the upgrade ID limit from 1,152 to 5,120](modding/upgrade-limit.md)
 - [Add upgrade triggers to PillageModule](modding/pillage-upgrade-trigger.md)
 - [Apply RATE_OF_FIRE to ranged and melee weapon timing](modding/rate-of-fire-for-ranged-and-melee.md)
+- [Enable stone auto-harvest for Arnor Stoneworkers](modding/arnor-stone-auto-harvest.md)
+- [Replenish hordes with FilteredHordeRespawnBehavior and upgrade requirements](modding/filtered-horde-respawn-behavior.md)
+- [Set the CLOUDY color for a special power](modding/cloudy-darkening-factor.md)
+- [Check for construction sites when targeting special powers](modding/phantom-structure-check.md)
+- [Filter targets for PlayerHealSpecialPower](modding/player-heal-acceptance-filter.md)
+- [Prevent duplicate experience and power points during delayed death](modding/delayed-death-experience.md)
+- [Set separate production modifiers for resources and units](modding/production-split.md)
+- [Enable wall climbing for Corsairs, Goblins, and spiders](modding/wall-climbing.md)
+- [Set resource costs for special powers](modding/special-power-money-cost.md)
+- [Filter worker harvest sources and drop-off buildings](modding/worker-harvest-filters.md)
+- [Remove experience, ranks, and banner carriers](modding/negative-experience.md)
 
 ### WorldBuilder
 
@@ -97,6 +112,7 @@ The builder checks the baseline hash, checks each old byte range and retains the
 
 - [Expose the network delay fix in Options](multiplayer/network-delay-toggle.md)
 - [Mute a player's messages from the multiplayer player list](multiplayer/mute-player-messages.md)
+- [Randomize teams in Skirmish and LAN](multiplayer/random-teams.md)
 
 ### Gameplay
 

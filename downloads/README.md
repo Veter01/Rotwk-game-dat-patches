@@ -39,6 +39,11 @@ END
 | `APT:ETBrightness` | Brightness |
 | `APT:ETHealth` | Health Bars |
 | `APT:ETResolution` | Screen Resolution |
+| `APT:ETDisplayMode` | Display Mode |
+| `APT:DisplayModeFullscreen` | Fullscreen |
+| `APT:DisplayModeBorderless` | Borderless Fullscreen |
+| `APT:DisplayModeWindowed` | Windowed |
+| `APT:ETCursorClipping` | Cursor Clipping |
 | `APT:ETFPS` | Frame Rate (FPS) |
 | `APT:ETFPS30` | 30 FPS |
 | `APT:ETFPS60` | 60 FPS |
@@ -77,7 +82,10 @@ END
 | `APT:ETPort` | Port Number |
 | `APT:ETPortHelp` | 8008 to 65535 |
 | `APT:MapSearch` | Search Maps |
+| `RULE:RandomTeams` | Random Teams |
 
 `APT:ETKeysNote` is the optional note under the hotkey controls. Use an empty quoted value to leave it blank. Keep both `APT:ETKeyMatchType` and `APT:ETKeyBuildPath` because the patched engine and APT movie reference different names for that label. Replace `Your Mod Name` with the name of your mod.
+
+Use the new display and lobby entries with the [Display Mode and Cursor Clipping](../interface/display-mode-and-cursor-clipping.md#language-packs) and [Random Teams](../multiplayer/random-teams.md#menu-assets-and-localization) patches.
 
 For the editable interface sources and build instructions, see the [APT guide](../apt/README.md).
