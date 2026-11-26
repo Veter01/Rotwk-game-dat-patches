@@ -2,7 +2,7 @@
 
 These guides document the differences between two Windows x86 builds of *The Rise of the Witch-king*. Each feature has its own guide with engine addresses, installation steps and a test to run in the game.
 
-Browse the [feature index](#feature-index) to find the guides by topic. For prebuilt files, see [Downloads](downloads/README.md).
+Browse the [feature index](#feature-index) to find the guides by topic. For prebuilt files, see [Downloads](downloads/README.md). For `lotr.str` entries, see [Languages](Languages/README.md).
 
 ## Credits
 
