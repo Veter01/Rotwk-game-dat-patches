@@ -70,11 +70,17 @@ For guides with their own build commands, use the input files and SHA-256 checks
 - [Show allied players in one color on the minimap](interface/allied-minimap-colors.md)
 - [Switch display modes live and toggle cursor clipping](interface/display-mode-and-cursor-clipping.md)
 - [Skip unfinished buildings when selecting matching buildings](interface/finished-building-selection.md)
+- [Help in Options](interface/options-help.md)
+- [Display and command bar updates](interface/display-and-command-bar.md)
+- [Restore mouse-edge scrolling in windowed mode](interface/windowed-camera-and-cursor-clipping.md)
+- [Fit the window and keep display controls valid](interface/window-fit-and-display-crash.md)
+- [Restore exclusive fullscreen and lock display mode during a match](interface/fullscreen-and-match-lock.md)
 
 ### Editable APT menus
 
 - [Edit and rebuild the lobby, options, and player-list movies](apt/README.md)
 - [Add and localize the Block column in the player list](apt/player-tribute-block-column.md)
+- [Match player-list and rule label sizes](apt/player-list-and-rule-labels.md)
 
 ### Mod development
 
@@ -97,10 +103,11 @@ For guides with their own build commands, use the input files and SHA-256 checks
 - [Set resource costs for special powers](modding/special-power-money-cost.md)
 - [Filter worker harvest sources and drop-off buildings](modding/worker-harvest-filters.md)
 - [Remove experience, ranks, and banner carriers](modding/negative-experience.md)
-
-### Ennorath
-
-- [Ennorath engine, interface, and data patch guides](ennorath/README.md)
+- [ROTWK and Ennorath patch guides](modding/ennorath-build-guide.md)
+- [Arnor Stone Auto-Harvest for ROTWK](modding/arnor-stoneworker-gathering.md)
+- [Weather effect colors](modding/weather-effect-colors.md)
+- [Apply discounts and display mixed upgrade prices](modding/commandbutton-discounts-and-upgrade-prices.md)
+- [Package game.dat and game.exe](modding/package-game-dat-and-exe.md)
 
 ### WorldBuilder
 
@@ -117,6 +124,7 @@ For guides with their own build commands, use the input files and SHA-256 checks
 - [Expose the network delay fix in Options](multiplayer/network-delay-toggle.md)
 - [Mute a player's messages from the multiplayer player list](multiplayer/mute-player-messages.md)
 - [Randomize teams in Skirmish and LAN](multiplayer/random-teams.md)
+- [Shared Army Control](multiplayer/shared-army-control.md)
 
 ### Gameplay
 
@@ -124,6 +132,8 @@ For guides with their own build commands, use the input files and SHA-256 checks
 - [Keep units moving when switching to Defensive Stance](gameplay/defensive-stance-keeps-units-moving.md)
 - [Enforce the construction limit](gameplay/enforce-building-limit.md)
 - [Restore pikeman retaliation when cavalry tramples them](gameplay/pike-trample-retaliation.md)
+- [Toggle autocast for matching selected units](gameplay/group-autocast.md)
+- [Fix the tooltip crash seen while training troops](gameplay/training-crash-tooltip-pointer.md)
 
 ## Patch builder
 

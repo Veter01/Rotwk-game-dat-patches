@@ -1,0 +1,62 @@
+diff --git a/sage_patch/patches/commandbar/multi_select_group.py b/sage_patch/patches/commandbar/multi_select_group.py
+index a2b4d2b..cc26240 100644
+--- a/sage_patch/patches/commandbar/multi_select_group.py
++++ b/sage_patch/patches/commandbar/multi_select_group.py
+@@ -380,14 +380,40 @@ def _emit_merge(a: Asm, flags_va: int) -> None:
+     a.emit(0x85, 0xC0)  # test eax, eax
+     a.jcc(JE, "adopt")  # nothing installed here yet; this set supplies it
+ 
+-    # The field, on both buttons. Zero is the default and means "not grouped", so it can never
+-    # match - two ungrouped buttons take the stock path they always did.
++    # The same native upgrade can be exposed by separately named CommandButtons.
++    a.emit(bytes.fromhex("837f1407"))
++    a.jcc(JNE, "same_power")
++    a.emit(bytes.fromhex("837814078b5724"))
++    a.jcc(JNE, "explicit_group")
++    a.emit(bytes.fromhex("85d2"))
++    a.jcc(JE, "explicit_group")
++    a.emit(bytes.fromhex("3b5024"))
++    a.jcc(JE, "equivalent")
++    a.jmp("explicit_group")
++
++    # Autocast aliases can share a slot when they refer to the same power template.
++    a.label("same_power")
++    a.emit(bytes.fromhex("837f1418"))
++    a.jcc(JNE, "explicit_group")
++    a.emit(bytes.fromhex("83781418"))
++    a.jcc(JNE, "explicit_group")
++    a.emit(bytes.fromhex("80bf0c01000000"))
++    a.jcc(JE, "explicit_group")
++    a.emit(bytes.fromhex("80b80c01000000"))
++    a.jcc(JE, "explicit_group")
++    a.emit(bytes.fromhex("8b574485d2"))
++    a.jcc(JE, "explicit_group")
++    a.emit(bytes.fromhex("3b5044"))
++    a.jcc(JE, "equivalent")
++
++    a.label("explicit_group")
+     a.emit(0x0F, 0xB7, 0x97, u32(MULTI_SELECT_GROUP_OFFSET))  # movzx edx, word [edi+0x12E]
+     a.emit(0x85, 0xD2)  # test edx, edx
+     a.jcc(JE, "hide")
+     a.emit(0x66, 0x3B, 0x90, u32(MULTI_SELECT_GROUP_OFFSET))  # cmp dx, word [eax+0x12E]
+     a.jcc(JNE, "hide")
+ 
++    a.label("equivalent")
+     # Same non-zero group, so the two are interchangeable. Take the frame and ask the ControlBar
+     # about each candidate.
+     a.emit(0x50)  # push eax                 ; [esp+4] once the next push lands: the installed
+@@ -464,7 +490,14 @@ def _emit_merge(a: Asm, flags_va: int) -> None:
+     # to `winHide` - but `avail` clobbers it, so it is zeroed again afterwards rather than assumed.
+     a.label("adopt")
+     a.emit(0xF6, 0x47, 0x1D, 0x01)  # test byte [edi+0x1d], 1
++    a.jcc(JNE, "adopt_allowed")
++    a.emit(bytes.fromhex("80bf0c01000000"))
+     a.jcc(JE, "hide")
++    a.emit(bytes.fromhex("837f1417"))
++    a.jcc(JE, "adopt_allowed")
++    a.emit(bytes.fromhex("837f1418"))
++    a.jcc(JNE, "hide")
++    a.label("adopt_allowed")
+     a.emit(0xFF, 0x75, CONTROL_BAR_MERGE_OBJECT_EBP & 0xFF)  # push [ebp-0x14]
+     a.emit(0x57)  # push edi
+     a.call("avail")
