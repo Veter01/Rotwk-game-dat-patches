@@ -98,6 +98,10 @@ For guides with their own build commands, use the input files and SHA-256 checks
 - [Filter worker harvest sources and drop-off buildings](modding/worker-harvest-filters.md)
 - [Remove experience, ranks, and banner carriers](modding/negative-experience.md)
 
+### Ennorath
+
+- [Ennorath engine, interface, and data patch guides](ennorath/README.md)
+
 ### WorldBuilder
 
 - [WorldBuilder documentation](worldbuilder/README.md)
