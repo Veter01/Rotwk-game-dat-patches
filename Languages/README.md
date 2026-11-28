@@ -1,5 +1,7 @@
 # Menu language pack
 
+Merge the [Engine Patch V3 entries](lotr-v3.str) into the `lotr.str` loaded by your mod. Replace the sample `APT:ETHelpURL` value with your mod's Discord link.
+
 Add these entries to the `lotr.str` loaded by your mod for the selected language. If a key already exists, update its value in place. Keep the key exactly as shown and translate the text in quotes for each language. A missing entry can appear as a `MISSING` label. For example
 
 ```text
@@ -66,6 +68,13 @@ END
 | `APT:ETPortHelp` | 8008 to 65535 |
 | `APT:MapSearch` | Search Maps |
 | `RULE:RandomTeams` | Random Teams |
+| `APT:ShareArmy` | Shared control |
+| `RULE:ShareArmy` | Shared control |
+| `APT:ETBlock` | Block |
+| `APT:ETHelp` | Help |
+| `APT:ETHelpText` | On this page, you can place a description of the mod and a link to the guide. |
+| `APT:ETHelpLink` | Contact the mod's Discord channel. |
+| `APT:ETHelpURL` | The link to your Discord channel |
 
 `APT:ETKeysNote` is the optional note under the hotkey controls. Use an empty quoted value to leave it blank. Keep both `APT:ETKeyMatchType` and `APT:ETKeyBuildPath` because the patched engine and APT movie reference different names for that label. Replace `Your Mod Name` with the name of your mod.
 

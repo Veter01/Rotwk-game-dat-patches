@@ -1,0 +1,31 @@
+RULE:RandomTeams
+"Random Teams"
+END
+
+APT:ShareArmy
+"Shared control"
+END
+
+RULE:ShareArmy
+"Shared control"
+END
+
+APT:ETBlock
+"Block"
+END
+
+APT:ETHelp
+"Help"
+END
+
+APT:ETHelpText
+"On this page, you can place a description of the mod and a link to the guide."
+END
+
+APT:ETHelpLink
+"Contact the mod's Discord channel."
+END
+
+APT:ETHelpURL
+"The link to your Discord channel"
+END
