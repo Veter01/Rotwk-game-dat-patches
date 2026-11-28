@@ -8,7 +8,7 @@ The three modified menus are available as editable XML. Each source folder also 
 | `options.big` | [Options.xml](source/options/Options.xml) | [Settings pages and hotkeys](options-menu.md) |
 | `playertribute.big` | [PlayerTribute.xml](source/playertribute/PlayerTribute.xml) | [Per-player chat mute](player-tribute.md) |
 
-The compiled menus are available in [Downloads](../downloads/README.md).
+The engine packages include compiled `options.big` and `playertribute.big`. [Releases](https://github.com/Veter01/Rotwk-game-dat-patches/releases/tag/engine-2026-11-26)
 
 ## Edit and rebuild
 
